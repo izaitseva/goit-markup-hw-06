@@ -294,7 +294,6 @@ h2 {
 .close-btn:hover {
     fill: #2196F3;
     cursor: pointer;
-
 }
 
 /* Форма регистрации */
@@ -345,7 +344,37 @@ h2 {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    outline: none;
+    outline: transparent;
+
+    padding-left: 42px;
+}
+
+.form-icon-email {
+    position: absolute;
+    left: 53px;
+    transform: translateY(110%);
+}
+
+.form-icon-phone {
+    position: absolute;
+    left: 53px;
+    transform: translateY(240%);
+}
+
+.form-icon:hover {
+    fill: #2196F3;
+}
+
+.form-icon-profile {
+    position: absolute;
+    left: 53px;
+    transform: translateY(260%);
+}
+
+.form-icon1 {
+    position: absolute;
+    left: 53px;
+    transform: translateY(110%);
 }
 
 .form-input:hover,
@@ -355,6 +384,11 @@ h2 {
     cursor: pointer;
 }
 
+.form-input:focus + .form-icon,
+.form-input:hover + .form-icon {
+
+    fill: #2196F3;
+}
 .textarea-design {
     width: 448px;
     height: 120px;
@@ -376,6 +410,7 @@ h2 {
     border: 1px solid rgba(33, 150, 243, 1);
     cursor: pointer;
 }
+
 .form-label {
     display: flex;
     flex-direction: column;
@@ -481,7 +516,6 @@ h2 {
     color: #ffffff;
     cursor: pointer;
 }
-
 
 /* Перелік послуг */
 
@@ -811,8 +845,8 @@ h2 {
 }
 
 .input-flex {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .footer-input {
@@ -831,7 +865,7 @@ align-items: center;
     border-radius: 4px;
 
     margin-right: 12px;
-    outline: none;
+    outline: transparent;
 }
 
 .footer-input:hover,
