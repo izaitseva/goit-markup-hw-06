@@ -74,17 +74,17 @@
                             <form class="registration-form" autocomplete="on" novalidate>
                                 <strong class="strong-form">Оставьте свои данные, мы вам перезвоним</strong>
                                 <div class="form-items">
-                                    <label class="form-label">
+                                    <label class="form-label" for="name">
                                         <span class="form-header">Имя</span>
-                                        <input class="form-input" type="text">
+                                        <input class="form-input" type="text" />
                                     </label>
                                     <label class="form-label">
                                         <span class="form-header">Телефон</span>
-                                        <input class="form-input" type="phone">
+                                        <input class="form-input" type="tel " name="phone">
                                     </label>
                                     <label class="form-label">
                                         <span class="form-header">Почта</span>
-                                        <input class="form-input" type="email">
+                                        <input class="form-input" type="email" name="email">
                                     </label>
                                     <span class="textarea-header">Комментарий</span>
                                     <textarea class="textarea-design" name="Комментарий" id="" cols="30" rows="10"
@@ -95,7 +95,7 @@
                                     <span class="terms-agreement">Соглашаюсь с рассылкой и принимаю
                                         <a class="terms-agreement terms-link" href="#">Условиями договора</a>
                                     </span>
-                                    <button class="submit-button">Отправить</button>
+                                    <button class="submit-button" type="submit">Отправить</button>
                                 </div>
                             </form>
                         </div>
@@ -440,6 +440,17 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div class="footer-form">
+                <h3>Подпишитесь на рассылку</h3>
+                <div class="input-flex">
+                    <input class="footer-input" type="text" placeholder="E-mail">
+                    <button class="footer-button" type="submit">Подписаться
+                        <svg class="button-icon" lass="telegram-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
     </footer>

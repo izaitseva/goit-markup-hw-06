@@ -319,19 +319,6 @@ h2 {
     margin-top: 20px;
 }
 
-.modal-checkbox {
-    margin-right: 9px;
-
-    width: 16px;
-    height: 15px;
-
-    border: 1px solid #212121;
-}
-
-.modal-checkbox:hover {
-    color: #2196F3;
-} 
-
 .strong-form {
     margin-top: 40px;
     margin-bottom: 12px;
@@ -358,6 +345,7 @@ h2 {
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
 }
 
 .form-input:hover,
@@ -366,14 +354,28 @@ h2 {
     border: 1px solid rgba(33, 150, 243, 1);
     cursor: pointer;
 }
+
 .textarea-design {
     width: 448px;
     height: 120px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    resize: none;
+
+    padding-left: 12px;
+    padding-top: 16px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    outline: none;
 }
 
+.textarea-design:hover,
+.textarea-design:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+    cursor: pointer;
+}
 .form-label {
     display: flex;
     flex-direction: column;
@@ -401,7 +403,7 @@ h2 {
 }
 
 .textarea-header {
-    display: flex;
+
     text-align: left;
 
     margin-bottom: 4px;
@@ -444,13 +446,33 @@ h2 {
 .terms-agreement a {
     color: rgba(33, 150, 243, 1);
 }
+
+.modal-checkbox {
+    margin-right: 9px;
+
+    width: 16px;
+    height: 15px;
+}
+
+.modal-checkbox:hover,
+.modal-checkbox:hover {
+    background-color: #2196F3;
+
+}
+
 .submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+
     position: absolute;
     bottom: 40px;
 
     font-weight: 700;
     font-size: 16px;
-    padding: 15px 32px;
     border-radius: 4px;
     border: none;
     margin-top: 30px;
@@ -710,6 +732,8 @@ h2 {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    position: relative;
 }
 
 .footer-address {
@@ -778,6 +802,72 @@ h2 {
 
 .footer-icon {
     fill: white;
+}
+
+/* Футер форма */
+.footer-form {
+    margin-left: 93px;
+    /* position: relative; */
+}
+
+.input-flex {
+display: flex;
+align-items: center;
+}
+
+.footer-input {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+
+    background-color: transparent;
+
+    width: 358px;
+    height: 50px;
+
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+
+    margin-right: 12px;
+    outline: none;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+
+    border: 1px solid rgba(33, 150, 243, 1);
+    cursor: pointer;
+}
+
+.footer-input::placeholder {
+
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2196F3;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button-icon {
+    margin-left: 10px;
 }
 
 /* Portfolio page */
