@@ -35,6 +35,21 @@ h2 {
     margin-bottom: 50px;
 }
 
+/* Visually hidden */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
 /* Стилизация лого */
 
 .logo {
@@ -310,14 +325,6 @@ h2 {
     flex-direction: column;
 }
 
-.modal-conditions {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 20px;
-}
-
 .strong-form {
     margin-top: 40px;
     margin-bottom: 12px;
@@ -353,13 +360,11 @@ h2 {
     position: relative;
 }
 
-
 .form-icon {
     position: absolute;
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-
 }
 
 .form-icon1 {
@@ -460,6 +465,53 @@ h2 {
     color: rgba(117, 117, 117, 0.5);
 }
 
+/* Checkbox */
+
+.modal-conditions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    gap: 9px;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 15px;
+    
+    outline: 1px solid #757575;
+    outline-offset: -1px;
+    border-radius: 2px;
+
+    fill: transparent;
+
+    transition-property: background-color(250ms), fill (250ms), border(250ms);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-checkbox:hover {
+cursor: pointer;
+fill: #757575;
+}
+
+.modal-conditions-input {
+    width: 16px;
+    height: 15px;
+}
+
+.modal-conditions-input:checked + .custom-checkbox {
+    background-color: #2196F3;
+    fill: white;
+    outline-color: #2196F3;
+    cursor: pointer;
+}
+
 .terms-agreement {
     font-weight: 400;
     font-size: 14px;
@@ -473,18 +525,11 @@ h2 {
     color: rgba(33, 150, 243, 1);
 }
 
-.modal-checkbox {
-    margin-right: 9px;
-
-    width: 16px;
-    height: 15px;
+.terms-agreement:hover {
+    cursor: pointer;
 }
 
-.modal-checkbox:hover,
-.modal-checkbox:hover {
-    background-color: #2196F3;
-
-}
+/* Submit button */
 
 .submit-button {
     display: flex;
