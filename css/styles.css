@@ -349,26 +349,17 @@ h2 {
     padding-left: 42px;
 }
 
-.form-icon-email {
-    position: absolute;
-    left: 53px;
-    transform: translateY(110%);
+.form-block {
+    position: relative;
 }
 
-.form-icon-phone {
-    position: absolute;
-    left: 53px;
-    transform: translateY(240%);
-}
 
-.form-icon:hover {
-    fill: #2196F3;
-}
-
-.form-icon-profile {
+.form-icon {
     position: absolute;
-    left: 53px;
-    transform: translateY(260%);
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 .form-icon1 {
